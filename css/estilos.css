@@ -168,6 +168,7 @@ footer p{
 .menu-horizontal li:hover .menu-vertical{
     display: block; 
     position: absolute;
+    justify-content: center;
 }
 
 .turismos-receptivo{
@@ -261,6 +262,7 @@ footer p{
     .menu-horizontal li{
         display: none;
     }
+    
     body{
         background-image: url(../img/Media/background-mobile.jpeg);
         background-size: cover;
@@ -287,7 +289,7 @@ footer p{
     background-image: url(../img/Media/background-ejemplo-resized.jpg);
     background-size: cover;
 }
-.header-index{
+/* .header-index{
     grid-area: header;
 }
 .footer-index{
@@ -295,9 +297,11 @@ footer p{
 }
 section #conoce-el-mundo{
     grid-area: titulo;
+} */
+.conoce-el-mundo{
+    height: 540px;
 }
-
-#grilla{
+/* #grilla{
     display: grid;
     grid-template-areas: 
     "header"
@@ -305,7 +309,7 @@ section #conoce-el-mundo{
     "footer"; 
     grid-template-columns: 100%;
     grid-template-rows: auto 580px auto;
-}
+} */
 #carouselExampleIndicators{
     width: 720px;
     height: 500px;
