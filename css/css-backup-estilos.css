@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(48, 48, 48); 
+    margin: 0%;
+    padding: 20px;
+    margin-bottom: 10px;
+    padding-bottom:1px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: greenyellow;
+    font-family: 'Montserrat', sans-serif;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(48, 48, 48);
+    color: white;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+footer p{
+    text-align: center;
+}
+.logos{
+    padding: 5px;
+}
+.lista-logos{
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+}
+#conoce-el-mundo{
+    position: relative;
+}
+.titulo{
+    text-align: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    
+}
+.titulo h1{
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+.titulo h1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+}
+.barra{
+    font-weight: bolder;
+    font-size: 25px;
+}
+/* .titulo p{
+    font-weight: bolder;
+    font-size: 15px;
+} */
+.contenedor-boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    background-color: rgb(48, 48, 48); 
+    font-family: 'Montserrat', sans-serif;
+    font-size:large;
+    color: white;
+    height: 50px;
+    width: 160px;
+    border-radius: 7px;
+    border: none;
+    /* transition: all 0.4s; */
+    transition: all 500ms ease;
+}
+.boton:hover{
+    background-color:rgba(48, 48, 48, 0.467);
+    border: solid  2px greenyellow;
+    color:white
+    /* background-color: greenyellow;
+    color: black; */
+}
+.formulario{
+    background-color: rgba(48, 48, 48, 0.479);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.palabras-formulario{
+    color: white;
+}
+.egresados{
+    height: 31%;
+    width: 31%;
+    border-radius: 5px;
+}
+.vid-egresados{
+    border-radius: 5px;
+}
+.donde-estamos{
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* .menu-horizontal ul{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: space-around;
+}
+.menu-horizontal li a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 115%;
+    justify-content: space-between;
+    padding: 20px;
+} */
+.menu-horizontal ul{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: space-around;
+}
+.menu-horizontal li a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 115%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.menu-horizontal li :hover{
+    color: greenyellow;
+}
+.menu-horizontal .menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    height: auto;
+    background-color: rgba(48, 48, 48, 0.758);
+    border-top: solid greenyellow;
+    border-bottom: solid greenyellow;
+    border-radius: 5px;
+    /* transition: all 500ms ease; */
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block; 
+    position: absolute;
+    justify-content: center;
+}
+
+.turismos-receptivo{
+    display: grid;
+    grid-template-columns: 55% auto;
+    grid-template-rows: 100%;
+    gap: 10px;
+}
+.Estadio-Unico{
+    display: grid;
+    grid-template-columns: 55% auto;
+    grid-template-rows: 100%;
+    gap: 10px;
+}
+
+.imgTRec{
+    height: 90%;
+    width: 90%;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.imgEsUnico{
+    height: 90%;
+    width: 90%;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.paris{
+    display: flex;
+    height: 60%;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    body{
+        background-image: url(../img/Media/background-mobile.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #grilla{
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "footer"; 
+        grid-template-columns: 100%;
+        grid-template-rows: auto 60% auto;
+        gap: 5px;
+    }
+    .lista-logos{
+        list-style-type: none;
+        display: flex;
+        text-decoration: none;
+        justify-content: space-around, flex-start;
+        flex-direction: column;
+    }
+    .menu-horizontal li{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 319px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #grilla{
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "footer"; 
+        grid-template-columns: 100%;
+        grid-template-rows: auto 600px auto;
+        gap: 5px;
+    }
+    .menu-horizontal li{
+        display: none;
+    }
+    
+    body{
+        background-image: url(../img/Media/background-mobile.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .lista-logos{
+        list-style-type: none;
+        display: flex;
+        text-decoration: none;
+        justify-content: space-around, flex-start;
+        flex-direction: column;
+    }
+    .logos{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .direccion{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.body-index{
+    background-image: url(../img/Media/background-ejemplo-resized.jpg);
+    background-size: cover;
+}
+/* .header-index{
+    grid-area: header;
+}
+.footer-index{
+    grid-area: footer;
+}
+section #conoce-el-mundo{
+    grid-area: titulo;
+} */
+.conoce-el-mundo{
+    height: 540px;
+}
+/* #grilla{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "titulo"
+    "footer"; 
+    grid-template-columns: 100%;
+    grid-template-rows: auto 580px auto;
+} */
+#carouselExampleIndicators{
+    width: 720px;
+    height: 500px;
+    position: relative;
+}
+.img-carousel{
+    height: 420px;
+    position: relative;
+}
+/* .caja-carousel{
+    display: inline;
+    width: 720px;
+    height: 480px;
+} */
+/* bootstrap branch */
+/* .slider-container{
+    position: absolute;
+} */
+/* .main{
+
+} */
