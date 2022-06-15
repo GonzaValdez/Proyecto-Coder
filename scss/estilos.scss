@@ -1,3 +1,86 @@
+header{
+    background-color: rgb(48, 48, 48); 
+    margin: 0%;
+    padding: 20px;
+    margin-bottom: 10px;
+    padding-bottom:1px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+    .menu-horizontal ul{
+        list-style-type: none;
+        display: flex;
+        color: white;
+        text-decoration: none;
+        justify-content: space-around;
+
+        li a{
+            display: flex;
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 115%;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        li :hover{
+            color: greenyellow;
+        }
+        .menu-vertical{
+            position: absolute;
+            display: none;
+            list-style: none;
+            width: 150px;
+            height: auto;
+            background-color: rgba(48, 48, 48, 0.758);
+            border-top: solid greenyellow;
+            border-bottom: solid greenyellow;
+            border-radius: 5px;
+        }
+        li:hover .menu-vertical{
+            display: block; 
+            position: absolute;
+            justify-content: center;
+        }
+    }
+}
+body{
+    background-color: greenyellow;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(48, 48, 48);
+    color: white;
+    padding-left: 3em;
+    padding-right: 3em;
+    p{
+        text-align: center;
+    }
+}
+.logos{
+    padding: 5px;
+}
+.lista-logos{
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+}
+.donde-estamos{
+    text-align: center;
+}
+
+/* Pagina Contacto */
 .formulario{
     background-color: rgba(48, 48, 48, 0.479);
     display: flex;
