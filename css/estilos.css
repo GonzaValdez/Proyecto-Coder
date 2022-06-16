@@ -1,3 +1,4 @@
+/* colores */
 header {
   background-color: #303030;
   margin: 0%;
@@ -79,3 +80,71 @@ footer {
   align-items: center; }
   .formulario .palabras-formulario {
     color: white; }
+
+/* Index */
+.body-index {
+  background-image: url(../img/Media/background-ejemplo-resized.jpg);
+  background-size: cover; }
+
+#conoce-el-mundo {
+  position: relative; }
+
+.conoce-el-mundo {
+  height: 540px; }
+
+.titulo {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  .titulo h1 {
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif; }
+    .titulo h1 p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 45px; }
+
+.barra {
+  font-weight: bolder;
+  font-size: 25px; }
+
+.contenedor-boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .contenedor-boton .boton, .contenedor-boton .turismo-boton {
+    width: 160px;
+    height: 50px;
+    background-color: #303030;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    color: white;
+    /* height: 50px;
+        width: 160px; */
+    border-radius: 7px;
+    border: none;
+    /* transition: all 0.4s; */
+    transition: all 500ms ease; }
+
+.boton:hover, .turismo-boton:hover {
+  background-color: rgba(48, 48, 48, 0.467);
+  border: solid  2px greenyellow;
+  color: white; }
+
+/* page turismo */
+#carouselExampleIndicators {
+  width: 720px;
+  height: 500px;
+  position: relative; }
+
+.img-carousel {
+  height: 420px;
+  position: relative;
+  border-radius: 15px; }
+
+.turismo-boton {
+  background-color: greenyellow;
+  color: black;
+  padding-bottom: 10px; }

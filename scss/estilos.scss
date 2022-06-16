@@ -1,5 +1,8 @@
+@import 'colores';
+@import 'mixins';
+
 header{
-    background-color: rgb(48, 48, 48); 
+    background-color: map-get($colores,color-secundario);  
     margin: 0%;
     padding: 20px;
     margin-bottom: 10px;
@@ -29,8 +32,9 @@ header{
             padding: 20px;
         }
         li :hover{
-            color: greenyellow;
+            color: map-get($colores,color-principal);
         }
+        
         .menu-vertical{
             position: absolute;
             display: none;
@@ -91,4 +95,84 @@ footer{
     .palabras-formulario{
         color: white;
     }
+}
+
+/* Index */
+.body-index{
+    background-image: url(../img/Media/background-ejemplo-resized.jpg);
+    background-size: cover;
+}
+#conoce-el-mundo{
+    position: relative;
+}
+.conoce-el-mundo{
+    height: 540px;
+}
+.titulo{
+    text-align: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    
+    h1{
+        font-size: 45px;
+        font-family: 'Montserrat', sans-serif;
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 45px;
+        }
+    }
+}
+.barra{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.contenedor-boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .boton{
+        @include sizes(160px, 50px);
+        background-color: rgb(48, 48, 48); 
+        font-family: 'Montserrat', sans-serif;
+        font-size:large;
+        color: white;
+        /* height: 50px;
+        width: 160px; */
+        border-radius: 7px;
+        border: none;
+        /* transition: all 0.4s; */
+        transition: all 500ms ease;
+    }
+}
+.boton:hover{
+    background-color:rgba(48, 48, 48, 0.467);
+    border: solid  2px greenyellow;
+    color:white
+    /* background-color: greenyellow;
+    color: black; */
+}
+
+/* page turismo */
+#carouselExampleIndicators{
+    width: 720px;
+    height: 500px;
+    position: relative;
+}
+.img-carousel{
+    height: 420px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.turismo-boton{
+    @extend .boton;
+    background-color: greenyellow;
+    color: black;
+    padding-bottom: 10px;
 }
