@@ -28,20 +28,6 @@ header {
       padding: 20px; }
     .header .menu-horizontal ul li :hover {
       color: greenyellow; }
-    .header .menu-horizontal ul .menu-vertical {
-      position: absolute;
-      display: none;
-      list-style: none;
-      width: 150px;
-      height: auto;
-      background-color: rgba(48, 48, 48, 0.758);
-      border-top: solid greenyellow;
-      border-bottom: solid greenyellow;
-      border-radius: 5px; }
-    .header .menu-horizontal ul li:hover .menu-vertical {
-      display: block;
-      position: absolute;
-      justify-content: center; }
 
 body {
   background-color: greenyellow;
@@ -80,7 +66,7 @@ footer {
   position: relative; }
 
 .conoce-el-mundo {
-  height: 540px; }
+  height: 630px; }
 
 .titulo {
   text-align: center;
@@ -134,107 +120,75 @@ footer {
 .turismo-boton {
   background-color: greenyellow;
   color: black;
-  padding-bottom: 10px; }
+  margin-bottom: 10px; }
 
 /* Page turismo-joven */
 .vid-egresados {
-  border-radius: 5px; }
+  border-radius: 10px;
+  width: 690px;
+  height: 400px; }
 
-.egresados {
-  height: 31%;
-  width: 31%;
-  border-radius: 5px; }
+@media screen and (max-width: 768px) {
+  .vid-egresados {
+    width: 680px;
+    height: 400px; } }
 
-/* Page turismo-receptivo */
-.turismos-receptivo {
-  display: grid;
-  grid-template-columns: 55% auto;
-  grid-template-rows: 100%;
-  gap: 10px; }
+@media screen and (max-width: 576px) {
+  .vid-egresados {
+    width: 375px;
+    height: 230px; } }
 
+/* Page Turismo Receptivo */
 .imgTRec {
-  height: 90%;
-  width: 90%;
-  margin-left: 5px;
-  border-radius: 5px; }
-
-.Estadio-Unico {
-  display: grid;
-  grid-template-columns: 55% auto;
-  grid-template-rows: 100%;
-  gap: 10px; }
+  height: 550px;
+  width: 1000px;
+  border-radius: 5px;
+  margin-bottom: 20px; }
 
 .imgEsUnico {
-  height: 90%;
-  width: 90%;
-  margin-left: 5px;
-  border-radius: 5px; }
+  height: 550px;
+  width: 1000px;
+  border-radius: 5px;
+  margin-bottom: 20px; }
+
+@media screen and (max-width: 992px) {
+  .imgTRec {
+    height: 450px;
+    width: 750px; }
+  .imgEsUnico {
+    height: 450px;
+    width: 750px; } }
+
+@media screen and (max-width: 768px) {
+  .imgTRec {
+    height: 300px;
+    width: 600px; }
+  .imgEsUnico {
+    height: 300px;
+    width: 600px; } }
+
+@media screen and (max-width: 576px) {
+  .imgTRec {
+    height: 200px;
+    width: 350px; }
+  .imgEsUnico {
+    height: 200px;
+    width: 350px; } }
 
 /* Pagina Contacto */
 .formulario {
-  background-color: rgba(48, 48, 48, 0.479);
+  background-color: rgba(48, 48, 48, 0.773);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
-  .formulario .palabras-formulario {
-    color: white; }
+  align-items: center;
+  margin-bottom: 30px; }
 
-/* Media queries */
-@media screen and (max-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-  body {
-    background-image: url(../img/Media/background-mobile.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat; }
-  #grilla {
-    height: 100vh;
-    display: grid;
-    grid-template-areas: "header" "titulo" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: auto 60% auto;
-    gap: 5px; }
-  .lista-logos {
-    list-style-type: none;
-    display: flex;
-    text-decoration: none;
-    justify-content: space-around, flex-start;
-    flex-direction: column; }
-  .menu-horizontal li {
-    display: none; } }
+.palabras-formulario {
+  color: white; }
 
-@media screen and (max-width: 319px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-  #grilla {
-    height: 100vh;
-    display: grid;
-    grid-template-areas: "header" "titulo" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: auto 600px auto;
-    gap: 5px; }
-  .menu-horizontal li {
-    display: none; }
-  body {
-    background-image: url(../img/Media/background-mobile.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .lista-logos {
-    list-style-type: none;
-    display: flex;
-    text-decoration: none;
-    justify-content: space-around, flex-start;
-    flex-direction: column; }
-  .logos {
-    display: flex;
-    justify-content: flex-start; }
-  .direccion {
-    display: flex;
-    justify-content: flex-end; } }
+.boton-formulario {
+  margin-bottom: 10px; }
+
+.aaa {
+  margin-bottom: 25px; }

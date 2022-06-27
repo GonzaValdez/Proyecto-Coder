@@ -15,28 +15,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body class="body-index">
-    <header>
-        <div class="header">
-        <nav>
-            <a href="../index.html"><img alt="Logo de la empresa" src="../img/Logos/logo ritmo.png"></a>
-        </nav>
-        <nav class="menu-horizontal">
-            <ul>
-                <li><a href="../index.html">Home</a></li> 
-                <li>
-                    <a href="../pages/turismo.html">Turismo</a>
-                </li> 
-                <li>
-                    <a href="../pages/turismo-joven.html">Turismo jóven</a>
-                </li> 
-                <li><a href="../pages/turismo-receptivo.html">Turismo Receptivo</a></li> 
-                <li><a href="#">Contacto</a></li> 
-            </ul>
-        </nav>
+    <header class="aaa">
+        <nav class="header navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html"><img src="../img/logos/logo ritmo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="menu-horizontal header collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="../pages/turismo.html">Turismo</a>
+        </li>
+        <li class="nav-item">
+            <a class="" href="../pages/turismo-joven.html">Turismo Joven</a>
+        </li>
+        <li class="nav-item">
+            <a class="" href="../pages/turismo-receptivo.html">Turismo Receptivo</a>
+        </li>
+        <li class="nav-item ">
+            <a class="" href="#">Contacto</a>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
     </header>
-    <br> <br>
-    <div class="formulario">
+    
+    <div class="formulario container-fluid">
     <form action="">
     <div class="palabras-formulario"> <label>Nombre</label> <br>
     <input type="text" placeholder="Ingrese su nombre"> <br> <br>
@@ -45,8 +54,8 @@
     <label>Asunto</label> <br>
     <input type="text" placeholder="Ej (Viaje a Paris)"> <br> <br>
     <label>Consulta</label></div>
-    <textarea name="" id="" cols="50" rows="15" placeholder="Especificaciones (Cant. de personas, fecha de estimada, duración, etc)"></textarea> <br> <br>
-    <input type="submit">
+    <textarea name="" id="" cols="40" rows="10" placeholder="Especificaciones (Cant. de personas, fecha estimada, duración, etc)"></textarea> <br> <br>
+    <input class="boton-formulario" type="submit">
     </form>
 </div>
 
