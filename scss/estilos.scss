@@ -70,7 +70,7 @@ footer{
 
 /* Index */
 .body-index{
-    background-image: url(../img/Media/background-ejemplo-resized.jpg);
+    background-image: url(../img/pexels-asad-photo-maldives-1266831.jpg);
     background-size: cover;
 }
 #conoce-el-mundo{
@@ -176,6 +176,14 @@ footer{
     border-radius: 5px;
     margin-bottom: 20px;
 }
+.txt-receptivo{
+    color: white;
+    
+    background-color:rgba(48, 48, 48, 0.603); 
+}
+.es-un{
+    color: white;
+}
 @media screen and (max-width: 992px){
     .imgTRec{
         height: 450px;
@@ -229,4 +237,8 @@ footer{
     }
     .aaa{
         margin-bottom: 25px;
+    }
+    .eee{
+        background-image: url(../img/pexels-asad-photo-maldives-1266831.jpg);
+        background-size: cover;
     }
