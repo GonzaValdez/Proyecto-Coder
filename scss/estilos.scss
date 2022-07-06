@@ -55,6 +55,9 @@ footer{
         text-align: center;
     }
 }
+.bold{
+    font-weight: bold;
+}
 .logos{
     padding: 5px;
 }
@@ -142,8 +145,18 @@ footer{
     color: black;
     margin-bottom: 10px;
 }
+.circ-eu{
+    list-style: none;
+}
 
 /* Page turismo-joven */
+.joven{
+    background-image: url(../img/pexels-wendy-wei-1387174.jpg);
+    background-size: cover;
+}
+.boliches{
+    margin-bottom: 20px;
+}
 .vid-egresados{
     border-radius: 10px;
     width: 690px;
